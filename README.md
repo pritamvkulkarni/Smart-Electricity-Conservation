@@ -1,6 +1,6 @@
 <h2> Smart-Electricity-Conservation-System </h2>
 
-<h4>**Author: Pritam Kulkarni ** </h4>
+<h4>Author: Pritam Kulkarni </h4>
 
 **PROBLEM STATEMENT** : To design an automated lighting system that provide a way to conserve electrical energy of project area.
 
