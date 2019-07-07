@@ -2,6 +2,8 @@
 
 <h4>Author: Pritam Kulkarni </h4>
 
+Click [here](https://youtu.be/vdsuwIBT-dU) to watch demo of thr project.
+
 **PROBLEM STATEMENT** : To design an automated lighting system that provide a way to conserve electrical energy of project area.
 
 **DESCRIPTION** :
