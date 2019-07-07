@@ -1,4 +1,4 @@
-# Smart-Electricity-Conservation 
+# Smart-Electricity-Conservation-System
 
 Author: Pritam Kulkarni 
 
