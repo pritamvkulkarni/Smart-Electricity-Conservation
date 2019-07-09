@@ -16,5 +16,5 @@ This is Config Readme. Please follow the steps below for intended execution of p
 7. Connect webcam (I used *Logitech webcam C310*) via any of USB port to your pi.
 8. Once you are able to access Raspberry Pi console, install Python package used for Raspberry Pi GPIO programming **RPi.GPIO**. It is already installed in Raspbian, the default operating system for Pi.  If not, you can install it using :      ```sudo pip install RPi.GPIO ```
  
-![Test Image 1](Figure-1-Raspberry-Pi-pinout-diagram.jpg)
+![Test Image 1](../diagrams/Figure-1-Raspberry-Pi-pinout-diagram.jpg)
 Refer This diagram fo BCM and BOARD GPIO numbering.
