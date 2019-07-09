@@ -113,15 +113,12 @@ while True:
        t1=t1.strftime("%H:%M:%S")
        t2=t2.strftime("%H:%M:%S")
        curr_date=datetime.datetime.now().strftime("%Y-%d-%m")
-	   print "Writing to database..."
        sql = "INSERT INTO INSTANCES(DEVICE_NO,DATE,STATUS,ON_TIME, OFF_TIME, CONSUMED)VALUES ('%d','%s','%s', '%s', '%s', '%f')" % (1,curr_date,'ON',t1,t2,td*0.00139)
        GPIO.output(3,GPIO.LOW)
        try:  
-		   print "Write Complete"
            cursor.execute(sql)
            db.commit()
        except:
-		   print "Write Failed"
            db.rollback()
 
 
@@ -132,8 +129,8 @@ while True:
        try:
 	   cur.execute(sql)
 	   result=cur.fetchone()
+	    
 	   db.commit()
-
        except:
 	   db.rollback()
     fromaddr = "dabc03055@gmail.com"
@@ -143,7 +140,7 @@ while True:
     msg['To'] = toaddr
     msg['Subject'] = "Todays Smart Energy Meter"
 
-    body = d+": You have consumed "+result[0]+" Units of Energy today and conserved"+ (total_time*appliance_per_second_consumtion-result)
+    body = d+": You have consumed "+result[0]+" Units of Energy today."
     msg.attach(MIMEText(body, 'plain'))
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
